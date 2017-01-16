@@ -1,0 +1,11 @@
+com\berenice\bloSecureBereV2\repositories\UtilisateurRepository.class
+com\berenice\bloSecureBereV2\metier\Message.class
+com\berenice\bloSecureBereV2\metier\Role.class
+com\berenice\bloSecureBereV2\web\IndexController.class
+com\berenice\bloSecureBereV2\repositories\MessageRepository.class
+com\berenice\bloSecureBereV2\repositories\RoleRepository.class
+com\berenice\bloSecureBereV2\metier\Utilisateur.class
+com\berenice\bloSecureBereV2\utils\MyPasswordEncoder.class
+com\berenice\bloSecureBereV2\config\SecurityConfig.class
+com\berenice\bloSecureBereV2\utils\HibernateAwareObjectMapper.class
+com\berenice\bloSecureBereV2\utils\DatabzseInitialiser.class

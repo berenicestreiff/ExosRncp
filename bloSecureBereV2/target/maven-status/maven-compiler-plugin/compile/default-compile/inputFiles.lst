@@ -1,0 +1,11 @@
+C:\java_workspace\bloSecureBereV2\src\main\java\com\berenice\bloSecureBereV2\metier\Message.java
+C:\java_workspace\bloSecureBereV2\src\main\java\com\berenice\bloSecureBereV2\repositories\MessageRepository.java
+C:\java_workspace\bloSecureBereV2\src\main\java\com\berenice\bloSecureBereV2\repositories\RoleRepository.java
+C:\java_workspace\bloSecureBereV2\src\main\java\com\berenice\bloSecureBereV2\metier\Role.java
+C:\java_workspace\bloSecureBereV2\src\main\java\com\berenice\bloSecureBereV2\metier\Utilisateur.java
+C:\java_workspace\bloSecureBereV2\src\main\java\com\berenice\bloSecureBereV2\utils\DatabzseInitialiser.java
+C:\java_workspace\bloSecureBereV2\src\main\java\com\berenice\bloSecureBereV2\repositories\UtilisateurRepository.java
+C:\java_workspace\bloSecureBereV2\src\main\java\com\berenice\bloSecureBereV2\utils\HibernateAwareObjectMapper.java
+C:\java_workspace\bloSecureBereV2\src\main\java\com\berenice\bloSecureBereV2\web\IndexController.java
+C:\java_workspace\bloSecureBereV2\src\main\java\com\berenice\bloSecureBereV2\config\SecurityConfig.java
+C:\java_workspace\bloSecureBereV2\src\main\java\com\berenice\bloSecureBereV2\utils\MyPasswordEncoder.java
