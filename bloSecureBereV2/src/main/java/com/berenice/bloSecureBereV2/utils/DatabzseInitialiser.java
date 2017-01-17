@@ -3,13 +3,15 @@ package com.berenice.bloSecureBereV2.utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
+import org.springframework.stereotype.Service;
 
 import com.berenice.bloSecureBereV2.metier.Role;
 import com.berenice.bloSecureBereV2.metier.Utilisateur;
 import com.berenice.bloSecureBereV2.repositories.MessageRepository;
 import com.berenice.bloSecureBereV2.repositories.RoleRepository;
 import com.berenice.bloSecureBereV2.repositories.UtilisateurRepository;
-
+//important
+@Service
 public class DatabzseInitialiser implements ApplicationListener<ContextRefreshedEvent> {
 
 		@Autowired
@@ -29,11 +31,10 @@ public class DatabzseInitialiser implements ApplicationListener<ContextRefreshed
 			if (utilisateurRepository.count() == 0) {
 				// la base est vide, creons les utilisateurs de base
 				//BCryptPasswordEncoder pe = new BCryptPasswordEncoder();
-				
+				// undescore important
 				Role r1 = new Role(0, "ROLE_ADMIN");
-				Role r2 = new Role(0, "ROLE_USER");
 				r1 = roleRepository.save(r1);
-				r2 = roleRepository.save(r2);
+		
 				
 				// utilisateur par defaut
 				// pour bonne pratique, il faudrait forcer
@@ -41,21 +42,12 @@ public class DatabzseInitialiser implements ApplicationListener<ContextRefreshed
 				Utilisateur u1 = new Utilisateur(0,
 												"admin",
 												"admin@admin.org",
-												myPasswordEncoder.encode("admin"),
+												myPasswordEncoder.encode("admin1234"),
 												true);
-				Utilisateur u2 = new Utilisateur(0,
-						"patrick",
-						"patrick@admin.org",
-						myPasswordEncoder.encode("toto1234"),
-						true);
-				// admin a les 2 roles
-				u1.getRoles().add(r1);
-				u1.getRoles().add(r2);
-				// patrick est seulement utilisateur
-				u2.getRoles().add(r2);
+			
 				
 				utilisateurRepository.save(u1);
-				utilisateurRepository.save(u2);
+// get ajouts
 			
 			}
 		}

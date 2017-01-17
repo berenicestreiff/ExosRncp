@@ -18,12 +18,14 @@ import com.berenice.bloSecureBereV2.repositories.RoleRepository;
 import com.berenice.bloSecureBereV2.repositories.UtilisateurRepository;
 import com.berenice.bloSecureBereV2.utils.MyPasswordEncoder;
 
-
+// bien rajouter tout le curd et modfier toutes les urlsy compris les urls de redirection
 @Controller
 @RequestMapping(value="/")
 public class IndexController {
 	
-	
+	// insérer hyn user. new technique, on utilise un objet Principal qui E à spring security 
+		// seucirty context holder
+	//principal permet de savoir quel user est connect"
 	@Autowired
 	private MyPasswordEncoder myPasswordEncoder;
 	@Autowired
@@ -58,10 +60,10 @@ public class IndexController {
 
 	Logger log = (Logger) LogManager.getLogger(IndexController.class);
 	
-
+//bien modif les url
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String redirectToPublic() {
-		return "redirect:/public/";
+		return "redirect:/welcome/";
 	}
 	
 	@RequestMapping(value = "/admin/", method = RequestMethod.GET)
@@ -146,7 +148,7 @@ public class IndexController {
 	
 	
 	
-	
+	//@Authorized... devant reove à ajouter
 	
 	
 
